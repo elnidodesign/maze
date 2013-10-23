@@ -1,4 +1,0 @@
-maze
-====
-
-Mazen website
