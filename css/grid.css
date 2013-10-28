@@ -140,7 +140,7 @@
 	
 	.gallery-list {margin-left:95px;}
 	
-	.padding_slide5 {padding:40px 0;}
+	.padding_slide5 {/*padding:40px 0;*/}
 	#slide5 span {font-size:26px;line-height:1px;}
 	
 	.flexslider {min-height:337px; top: 56px;}
