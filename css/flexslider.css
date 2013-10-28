@@ -133,3 +133,35 @@ html[xmlns] .slides {display: block;}
     width: 84px;
     top: 50%;
 }
+@media screen and (max-width: 966px) { 
+.flex-direction-nav .flex-prev{
+	background-image: url(../images/slider_nav-small.png);
+    height: 50px;
+    width: 50px;
+    top: 45%;
+}
+.flex-direction-nav .flex-next{
+	background-image: url(../images/slider_nav-small.png);
+    background-position: -49px 0 ;
+    height: 50px;
+    width: 50px;
+    top: 45%;
+}
+}
+
+@media screen and (max-width : 479px) {
+	.flex-direction-nav .flex-prev{
+	background-image: url(../images/slider_nav-small.png);
+ 	height: 50px;
+    width: 50px;
+    top: 50%;
+}
+.flex-direction-nav .flex-next{
+	background-image: url(../images/slider_nav-small.png);
+    background-position: -49px 0 ;
+    height: 50px;
+    width: 50px;
+    top: 50%;
+}
+
+}

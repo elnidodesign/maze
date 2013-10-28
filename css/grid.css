@@ -74,7 +74,7 @@
 	
 	#slide5 span {font-size:55px;line-height:45px;}
 	
-	.flexslider {min-height:545px;}
+	.flexslider {/*min-height:545px;*/}
 	
 	.padding_slide7 {padding:100px 0 70px;}
 	#slide7 span {font-size:47px;line-height:50px;}
@@ -140,10 +140,10 @@
 	
 	.gallery-list {margin-left:95px;}
 	
-	.padding_slide5 {/*padding:40px 0;*/}
+	.padding_slide5 {}
 	#slide5 span {font-size:26px;line-height:1px;}
 	
-	.flexslider {min-height:337px; top: 56px;}
+	.flexslider {/*min-height:307px;*/ top: 29px;}
 	
 	.padding_slide7 {padding:100px 0 70px;}
 	#slide7 span {font-size:30px;line-height:40px;}
@@ -182,11 +182,18 @@
 
 	.section {height: 123px;}
 
+
 	.grid_6 h1, .grid_5 h1{height: 108px; padding-top: 15px;}
 	
 }
-
-
+@media screen and (max-width: 874px) { 	
+.section .grid_5 h1{display: none;}
+.section .grid_6{width: 100%;}
+.section .grid_6 h1{text-align: center;}
+.grid_6, .grid_5{width: 100%;}
+.section2{display: block;}
+.section2 .grid_6 h1{text-align: center;}
+}
 /*LITTLE*/
 @media screen and (max-width : 479px) {	
 
@@ -199,7 +206,12 @@
 	.shadow {
     display: none;
 	}
-	
+
+	.section {height: 80px;}
+	.section2 {height: 80px;}
+	.section div.grid_6 h1, .section2 div.grid_6 h1 {padding-top: 0px;}
+	.section .grid_6{width: 100%;}
+	.grid_6, .grid_5{width: 100%;}
 	.padding_slide1 {padding:155px 0 30px;}
 	.effects_1 {display:none;}
 	#slide1 h1 {font-size:34px;line-height:40px;}
@@ -211,7 +223,7 @@
 	
 	.gallery-list {margin-left:33px;}
 	
-	.flexslider {min-height:278px;}
+	.flexslider {/*min-height:278px;*/}
 	
 	.padding_slide5 {padding:40px 0;}
 	#slide5 span {font-size:22px;line-height:1px;}
@@ -235,9 +247,9 @@
 	.grid_1,
 	.grid_2,
 	.grid_3,
-	.grid_4,
+	.grid_4,/*
 	.grid_5,
-	.grid_6,
+	.grid_6,*/
 	.grid_7,
 	.grid_8,
 	.grid_9,
