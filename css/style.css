@@ -945,7 +945,7 @@ nav {
 	f/*ont-family: 'PT Sans', Arial, sans-serif;*/
 	font-weight: bold;
 	position: relative;
-	border-bottom: 2px solid #283744;
+	/*border-bottom: 2px solid #283744;*/
 }
 nav ul {
 	padding: 0;
@@ -1102,9 +1102,24 @@ ul.navigation li.social{
 @media only screen and (max-width: 479px) {
 	.container #nav
 	{
-		float: right;
-		width: 256px;
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
 
+	}
+
+	.navigation{
+		float: none;
+	}
+
+	#nav ul.navigation li
+	{
+		float: none;
+	}
+	#nav ul li
+	{
+		display: inline;
 	}
 
 	#nav ul.navigation
@@ -1113,30 +1128,14 @@ ul.navigation li.social{
 	}
 
 	#socialnav{
-		width: 50px;
-		height: 50px;
-		float: right !important;
+		display:none;
 	}
 
-	nav a#pull:after {
-		content:"";
-		right: 5px;
-		top: 18px;
+	nav{
+		display: none;
 	}
 
-	nav ul {
-		margin-top: 50px;
-	}
-
-	nav ul li
-	{
-		padding:15px 5px 0px 10px;
-		transition: all 0.4s ease-in-out;
-		-moz-transition: all 0.4s ease-in-out;
-		-webkit-transition: all 0.4s ease-in-out;
-		-o-transition: all 0.4s ease-in-out;
-		width: 35px;
-	}
+	
 	
 }
 
