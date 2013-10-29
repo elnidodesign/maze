@@ -26,8 +26,63 @@
 		<script src="js/respond.src.js"></script>
 	<![endif]-->
 
+	<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+
+<script>
+		$(document).ready(function(){
+
+			$('.grid li .caption').mouseleave(
+				function(){
+					//$(this).css('transition', 'all .3s ease-in');
+					$(this).parent().find('img').css('transform', 'scale(1)');
+					//$(this).css('opacity', '1');	   
+			});
+
+
+			$('.grid li img').mouseenter(
+				function(){
+					$(this).css('transition', 'all .3s ease-in');
+					$(this).css('transform', 'scale(1.45)');
+					$(this).css('-webkit-transition', 'all .3s ease-in');
+					$(this).css('-moz-transition', 'all .3s ease-in');
+					$(this).css('-ms-transition', 'all .3s ease-in');
+					$(this).css('-o-transition', 'all .3s ease-in');
+					$(this).css('opacity', '1');	   
+			});
+
+
+		});
+
+	</script>
+
+
 	<script type="text/javascript">
-		$(document).ready(function(){	
+		$(document).ready(function(){
+
+			$(document).ready(function(){	
+				$('#socialmenu').click(function(){
+				$("#socialmenu ul li").toggle();
+				$(".navigation li.social ul li").toggle();
+			});
+
 			$("#ajax-contact-form").submit(function() {
 				var str = $(this).serialize();		
 				$.ajax({
@@ -61,22 +116,24 @@
 			<a href="#home" data-slide="1"><img class="logo_big" src="images/logo.png"><img class="logo_small" src="images/logo_small.png"></a>
 		</div>
 		
+		<nav class=" fright" id="socialnav">
+			<a href="#" id="pull"></a><ul class=" fright">
+				<li><img class="logo_big" src="images/twitter-ic.gif"></li>
+				<li><img class="logo_big" src="images/face-ic.gif"></li>
+				<li><img class="logo_big" src="images/linkedin-ic.gif"></li>
+				<li><img class="logo_big" src="images/google-ic.gif"></li>
+				<li><img class="logo_big" src="images/camer-ic.gif"></li>
+				<li><img class="logo_big" src="images/rss-ic.gif"></li>
+			</ul>
+			
+		</nav>
+
 		<div id="nav" class="fright">
 			<ul class="navigation">
 				<li>Services</li>
 				<li>Portfolio</li>
 				<li>About</li>
 				<li>Blog</li>
-				<li class="social">
-					<ul class="sub">
-						<li><img class="logo_big" src="images/twitter-ic.gif"></li>
-						<li><img class="logo_big" src="images/face-ic.gif"></li>
-						<li><img class="logo_big" src="images/linkedin-ic.gif"></li>
-						<li><img class="logo_big" src="images/google-ic.gif"></li>
-						<li><img class="logo_big" src="images/camer-ic.gif"></li>
-						<li><img class="logo_big" src="images/rss-ic.gif"></li>
-				    </ul>
-				</li>
 			</ul>
 		</div>
 
@@ -133,7 +190,7 @@
 <!-- start thumbnailWrapper div -->
 	<div class='thumbnailWrapper'>
 		<!-- start unordered list -->
-		<ul>
+		<ul class='grid'>
 			<li>
 				<a href='#'><img src='images/1.jpg' /></a>
 				<div class='caption'>

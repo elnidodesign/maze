@@ -121,22 +121,22 @@ jQuery(document).ready(function ($) {
             //when mouse over the list item...
             $('.grid_6 .thumbnailWrapper ul li').hover(function(){
                 
-                $(this).find('img').stop().animate({
+                // $(this).find('img').stop().animate({
                     
-                    /* increase the image width for the zoom effect*/
-                    width: parseInt(thumbnail.imgWidth) + thumbnail.imgIncrease,
-                    /* we need to change the left and top position in order to 
-                    have the zoom effect, so we are moving them to a negative
-                    position of the half of the imgIncrease */
-                    left: thumbnail.imgIncrease/2*(-1),
-                    top: thumbnail.imgIncrease/2*(-1)
+                //     /* increase the image width for the zoom effect*/
+                //     width: parseInt(thumbnail.imgWidth) + thumbnail.imgIncrease,
+                //      we need to change the left and top position in order to 
+                //     have the zoom effect, so we are moving them to a negative
+                //     position of the half of the imgIncrease 
+                //     left: thumbnail.imgIncrease/2*(-1),
+                //     top: thumbnail.imgIncrease/2*(-1)
                     
-                },{ 
+                // },{ 
                     
-                    "duration": thumbnail.effectDuration,
-                    "queue": false
+                //     "duration": thumbnail.effectDuration,
+                //     "queue": false
                     
-                });
+                // });
                 
                 //show the caption using slideDown event
                 $(this).find('.caption:not(:animated)').slideDown(thumbnail.effectDuration);
