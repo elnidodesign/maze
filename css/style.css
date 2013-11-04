@@ -80,7 +80,7 @@ ul.navigation {
 
 nav ul li, 
 .navigation li.social ul li{
-	padding:35px 0px 0px 35px;
+	padding:20px 15px 15px 20px;
 	transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
 	-webkit-transition: all 0.4s ease-in-out;
@@ -125,6 +125,16 @@ h1 {
 	line-height: 86px;
 	color:#343434;
 	font-weight: 400;
+}
+
+.section h1{
+	color:#fff;
+	height: 173px;
+	margin-bottom: 0px !important;
+	padding:20px 0px 0px 0px;
+	font-weight: 300;
+	font-size: 41px;
+	text-transform: uppercase;
 }
 
 .section .grid_6, .section2 .grid_6{
@@ -274,6 +284,8 @@ a.button:hover {cursor:pointer;text-decoration:none;
 	overflow: hidden;
 }
 
+.title-int {height: 110px;}
+
 .section2{
 	height:253px;
 	background:#d44922 url(../images/bg_section.jpg) repeat center top;
@@ -310,7 +322,7 @@ img.about_img {
 }
 .padding_slide3 {
 	background-color: #faa57e;
-	height: 177px;
+	/*height: 177px;*/
 }
 #slide3 p {
 	padding:0;
